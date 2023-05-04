@@ -1,0 +1,41 @@
+// main: ../style.less
+
+.delivery {
+  padding: (14 / @mobile*100vw);
+  p {
+    margin: 0;
+  }
+
+  .img {
+    width: (196 / @mobile*100vw);
+    height: (196 / @mobile*100vw);
+    margin: 0;
+    background-color: @color-red;
+  }
+
+  .wr-flexbox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: (20 / @mobile*100vw);
+  }
+
+  .wr-flex-vert {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: (64 / @mobile*100vw);
+
+    p {
+      span.big {
+        padding-top: (20 / @mobile*100vw);
+        color: @color-light_grey;
+      }
+      &.diff {
+        font-family: "garet";
+        font-size: (16 / @mobile*100vw);
+        line-height: (24 / @mobile*100vw);
+        color: @color-black;
+      }
+    }
+  }
+}

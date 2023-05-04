@@ -1,0 +1,26 @@
+// main: ../style.less
+
+.banner {
+  padding: (14 / @mobile*100vw);
+  background-repeat: no-repeat;
+
+  &#top {
+    padding-bottom: (192 / @mobile*100vw);
+
+    background-image: url(../../img/banner-bg.svg);
+    background-position-y: bottom;
+    background-size: 100%;
+  }
+
+  &#knowledge {
+    margin-bottom: (96 / @mobile*100vw);
+    .img {
+      height: (316 / @mobile*100vw);
+    }
+  }
+  &#projection {
+    padding-top: (44 / @mobile*100vw);
+    margin-bottom: (96 / @mobile*100vw);
+    background: linear-gradient(180deg, @color-light_brown 75%, #fff 25%);
+  }
+}

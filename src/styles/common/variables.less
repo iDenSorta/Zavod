@@ -1,34 +1,35 @@
 // main: ../style.less
 
-
 // Модуль расстояний и размеров. Все кратно 8 пикселям.
 // Модуль можно умножить на 2, на 4, на 1.5. Получится ровное число
 // Сейчас стили не преведены к 8ми, но постепенно будут выведены все размеры
-@m:                         8px;
+@m: 8px;
 
 // Основные цвета
-@background:                @color-white;
-@background-dark:           #2C2C2C;
+@background: @color-white;
+@background-dark: #2e2e2e;
 
-@color-blue:                #009FE3;
-@color-orange:              #D88532;
-@color-green:               #A4B635;
-@color-white:               #FFFFFF;
-@color-grey:                #8A8A8A;
-@color-mustard:             #CE9D1D;
-@color-black:               @background-dark;
+@color-blue: #3b93e8;
+@color-red: #e13131;
 
+@color-white: #ffffff;
+@color-grey: #838383;
+@color-light_grey: #dadada;
+@color-light_brown: #fff4de;
+@color-black: @background-dark;
 
 // Шрифты
-@main-font:                 'Gilroy';
+@main-font: "source_sans";
+@header-font: "garet";
+@p-font: "Source Sans Pro";
 
-@font-size-m:               @m*1.5;       // 12px
-@line-height-m:             @m*2.5;       // 20px
+@font-size-m: @m*1.5; // 12px
+@line-height-m: @m*2.5; // 20px
 
-@font-size:                 @m*2;       // 16px
-@line-height:               @m*3;       // 24px
+@font-size: @m*2; // 16px
+@line-height: @m*3; // 24px
 
 // Разрешения мониторов
-@tablet:                    768px;
-@desktop:                   1024px;
-@desktop-xl:                1440px;
+@mobile: 375px;
+@tablet: 835px;
+@desktop: 1920px;

@@ -1,0 +1,98 @@
+// main: ../style.less
+
+.btn {
+  width: (194 / @mobile*100vw);
+  height: (48 / @mobile*100vw);
+  border-radius: (8 / @mobile*100vw);
+
+  background-color: @color-black;
+
+  font-size: (12 / @mobile*100vw);
+  font-family: "garet";
+  color: @color-white;
+  line-height: (16 / @mobile*100vw);
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: (347 / @mobile*100vw);
+  height: (212 / @mobile*100vw);
+  margin-bottom: (28 / @mobile*100vw);
+
+  background-color: @color-black;
+  border-radius: (24 / @mobile*100vw);
+
+  &__projects {
+    width: (347 / @mobile*100vw);
+    height: (212 / @mobile*100vw);
+    margin: 0 (14 / @mobile*100vw) (14 / @mobile*100vw) (12 / @mobile*100vw);
+
+    background-color: @color-black;
+    border-radius: (24 / @mobile*100vw);
+  }
+}
+
+//---------------- carousel.pug -----------------
+
+.card__top {
+  .img {
+    width: (347 / @mobile*100vw);
+    height: (196 / @mobile*100vw);
+    margin: 0;
+
+    border-radius: (24 / @mobile*100vw) (24 / @mobile*100vw) 0 0;
+  }
+}
+
+.card__bottom {
+  width: (347 / @mobile*100vw);
+  height: (152 / @mobile*100vw);
+  padding: (21 / @mobile*100vw);
+  border-radius: 0 0 (24 / @mobile*100vw) (24 / @mobile*100vw);
+
+  background-color: @color-red;
+
+  span {
+    font-family: "garet";
+    color: @color-white;
+    font-size: (20 / @mobile*100vw);
+    line-height: (20 / @mobile*100vw);
+  }
+
+  p {
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    font-size: (12 / @mobile*100vw);
+    line-height: (20 / @mobile*100vw);
+    color: @color-white;
+
+    width: 95%;
+
+    margin-top: (10 / @mobile*100vw);
+    margin-bottom: 0;
+  }
+}
+
+.slider-nav {
+  left: -8px;
+  &::after {
+    background-color: transparent;
+  }
+  &::before {
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4Z' fill='%23E9E7DB' stroke='%23838383' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M24 16L16 24L24 32' stroke='%23838383' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M32 24L16 24' stroke='%23838383' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+  }
+  &.slider-nav-next {
+    right: (4 / @mobile*100vw);
+
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+}

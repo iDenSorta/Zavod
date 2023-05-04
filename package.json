@@ -1,11 +1,15 @@
 {
-  "name": "divo-ladoga",
+  "name": "zavod",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/iDenSorta/Zavod.git"
+  },
   "description": "",
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --open --live-reload --config webpack.dev.js",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "pug": "pug -w src/index.pug",
     "build": "webpack --config webpack.prod.js",
     "deploy": "gh-pages -d dist"
   },
@@ -56,5 +60,5 @@
     "webpack-dev-server": "^4.9.3",
     "webpack-merge": "^5.8.0"
   },
-  "homepage": "https://idensorta.github.io/divo-ladoga-divo"
+  "homepage": "https://idensorta.github.io/zavod"
 }

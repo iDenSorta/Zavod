@@ -1,0 +1,58 @@
+// main: ../style.less
+
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+  display: none;
+}
+/* Убираем стандартный маркер Firefox */
+details > summary {
+  list-style: none;
+}
+
+.details {
+  margin-bottom: (40 / @mobile*100vw);
+  .wrapper {
+    padding: 0 (14 / @mobile*100vw);
+  }
+  summary {
+    padding: (24 / @mobile*100vw);
+    margin-bottom: (16 / @mobile*100vw);
+    border-radius: (24 / @mobile*100vw);
+    border: (2 / @mobile*100vw) solid @color-red;
+    color: @color-red;
+    p {
+      color: @color-red;
+      margin: 0;
+      width: 75%;
+      font-size: (12 / @mobile*100vw);
+      font-weight: normal;
+      line-height: (18 / @mobile*100vw);
+    }
+    h2 {
+      font-size: (20 / @mobile*100vw);
+      line-height: (20 / @mobile*100vw);
+      margin-bottom: 12px;
+    }
+  }
+  .details__number {
+    display: flex;
+    gap: (12 / @mobile*100vw);
+  }
+}
+
+details[open] {
+  padding: (24 / @mobile*100vw);
+  margin-bottom: (16 / @mobile*100vw);
+
+  border-radius: (24 / @mobile*100vw);
+  border: (2 / @mobile*100vw) solid @color-red;
+  color: @color-red;
+
+  summary {
+    padding: 0;
+    border: none;
+  }
+  p {
+    margin: 0;
+  }
+}

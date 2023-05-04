@@ -1,0 +1,29 @@
+// main: ../style.less
+
+.projects {
+  margin-bottom: (96 / @mobile*100vw);
+
+  .wrapper {
+    padding: 0 (14 / @mobile*100vw);
+  }
+  .wrapper-price {
+    height: 102px;
+    display: flex;
+
+    align-items: end;
+    padding: 0 (14 / @mobile*100vw);
+    font-family: "garet";
+    font-size: (20 / @mobile*100vw);
+    line-height: (22 / @mobile*100vw);
+    gap: 15px;
+  }
+
+  .wrapper-price__number {
+    height: (98 / @mobile*100vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+}

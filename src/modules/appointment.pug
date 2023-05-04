@@ -1,0 +1,19 @@
+.appointment
+    .wrapper
+        h2 
+            span.red Оставляйте заявку 
+            |и мы перезвоним чтобы обсудить ваш заказ и рассказать о плюсах работы с нами
+        .wr-flexbox
+            .img
+            p Задача организации, в особенности же консультация с широким активом требуют определения и уточнения существенных финансовых и административных условий.
+        form(action="post")
+            fieldset 
+                .wrapper
+                    input.text-field__input(type="text" placeholder="ФИО") 
+                    input.text-field__input(type="tel" name="telephone" placeholder="Телефон")
+                    input.text-field__input(type="email", name="mail" placeholder="Почта")
+                .wr-flexbox
+                    input(type="checkbox" id="checkbox_agree" name="politics")
+                    span Нажимая на кнопку вы соглашаетесь с политикой конфеденциальности
+                .btn
+                    a(href="#") ОТПРАВИТЬ ЗАЯВКУ
