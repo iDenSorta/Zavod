@@ -25,3 +25,29 @@
     margin-bottom: (18 / @mobile*100vw);
   }
 }
+
+@media (min-width: @tablet) {
+  .footer {
+    font-size: (16 / @tablet*100vw);
+    line-height: (24 / @tablet*100vw);
+
+    .wrapper {
+      display: flex;
+      margin-bottom: (26 / @tablet*100vw);
+      justify-content: space-between;
+      padding: 0 (22 / @tablet*100vw);
+    }
+
+    .footer__wrapper_links {
+      gap: (8 / @tablet*100vw);
+      margin-bottom: (0 / @tablet*100vw);
+    }
+    .footer__wrapper_info {
+      display: flex;
+      text-align: right;
+      flex-direction: column;
+      gap: (8 / @tablet*100vw);
+      margin-bottom: (0 / @tablet*100vw);
+    }
+  }
+}

@@ -19,8 +19,8 @@
     gap: (16 / @mobile*100vw);
     margin-bottom: (32 / @mobile*100vw);
     p {
-      font-size: 12px;
-      width: 165px;
+      font-size: (12 / @mobile*100vw);
+      width: (165 / @mobile*100vw);
       line-height: (20 / @mobile * 100vw);
       font-weight: normal;
     }
@@ -37,5 +37,40 @@
     width: (347 / @mobile*100vw);
     height: (64 / @mobile*100vw);
     border-radius: (16 / @mobile*100vw);
+  }
+}
+
+@media (min-width: @tablet) {
+  .appointment {
+    padding: 0 (22 / @tablet*100vw);
+    margin-bottom: (76 / @tablet*100vw);
+    .img {
+      width: (294 / @tablet*100vw);
+      height: (120 / @tablet*100vw);
+    }
+
+    .wr-flexbox {
+      gap: (20 / @tablet*100vw);
+      margin-bottom: (52 / @tablet*100vw);
+      p {
+        font-size: (16 / @tablet*100vw);
+        width: (430 / @tablet*100vw);
+        line-height: (32 / @tablet * 100vw);
+        font-weight: normal;
+      }
+
+      span {
+        width: (650 / @tablet*100vw);
+        font-size: (20 / @tablet*100vw);
+        line-height: (32 / @tablet*100vw);
+      }
+    }
+    .btn {
+      width: (790 / @tablet*100vw);
+      height: (80 / @tablet*100vw);
+      font-size: (20 / @tablet*100vw);
+      line-height: (32 / @tablet*100vw);
+      border-radius: (16 / @tablet*100vw);
+    }
   }
 }

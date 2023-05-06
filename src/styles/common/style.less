@@ -114,6 +114,7 @@ input[type="checkbox"] {
   background-position: center;
   background-image: url("data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M20 6L9 17L4 12' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
 }
+
 .wow {
   visibility: hidden;
   opacity: 0;
@@ -130,15 +131,41 @@ input[type="checkbox"] {
     font-size: (14 / @tablet * 100vw);
     line-height: (24 / @tablet * 100vw);
   }
+
+  h1 {
+    font-size: (72 / @tablet * 100vw);
+    line-height: (72 / @tablet * 100vw);
+    margin: 0 0 (20 / @tablet * 100vw);
+    text-align: left;
+  }
   h2 {
-    font-size: (32 / @tablet * 100vw);
-    line-height: (48 / @tablet * 100vw);
+    font-size: (40 / @tablet * 100vw);
+    line-height: (56 / @tablet * 100vw);
     margin: 0 0 (24 / @tablet * 100vw);
   }
 
   p {
     font-size: (16 / @tablet * 100vw);
     line-height: (32 / @tablet * 100vw);
+    margin-bottom: (40 / @tablet*100vw);
+  }
+
+  .text-field__input {
+    height: (80 / @tablet*100vw);
+    padding: (20 / @tablet*100vw) (56 / @tablet*100vw);
+    margin-bottom: (20 / @tablet*100vw);
+    border-radius: (16 / @tablet*100vw);
+  }
+
+  ::placeholder {
+    font-size: (24 / @tablet*100vw);
+    line-height: (40 / @tablet*100vw);
+  }
+
+  input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    border: 2px solid @color-red;
   }
 }
 
@@ -147,6 +174,7 @@ input[type="checkbox"] {
     font-size: (14 / @desktop*100vw);
     line-height: (24 / @desktop*100vw);
   }
+
   h2 {
     font-size: (48 / @desktop*100vw);
     line-height: (56 / @desktop*100vw);

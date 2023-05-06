@@ -96,3 +96,69 @@
     }
   }
 }
+
+//==============
+
+.wr-flexbox__nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+@media (min-width: @tablet) {
+  .btn {
+    width: (160 / @tablet*100vw);
+    height: (48 / @tablet*100vw);
+    border-radius: (8 / @tablet * 100vw);
+
+    font-size: (12 / @tablet*100vw);
+    line-height: (16 / @tablet*100vw);
+  }
+
+  .img {
+    width: (795 / @tablet*100vw);
+    height: (356 / @tablet*100vw);
+    margin-bottom: (28 / @tablet*100vw);
+    border-radius: (24 / @tablet*100vw);
+
+    &__projects {
+      width: (347 / @mobile*100vw);
+      height: (212 / @mobile*100vw);
+      margin: 0 (14 / @mobile*100vw) (14 / @mobile*100vw) (12 / @mobile*100vw);
+      border-radius: (24 / @mobile*100vw);
+    }
+  }
+
+  //---------------- carousel.pug -----------------
+
+  .card__top {
+    .img {
+      width: (318 / @tablet*100vw);
+      height: (184 / @tablet*100vw);
+      margin: 0;
+
+      border-radius: (24 / @tablet*100vw) (24 / @tablet*100vw) 0 0;
+    }
+  }
+
+  .card__bottom {
+    width: (318 / @tablet*100vw);
+    height: (156 / @tablet*100vw);
+    padding: (12 / @tablet*100vw) (22 / @tablet*100vw);
+    border-radius: 0 0 (24 / @tablet*100vw) (24 / @tablet*100vw);
+
+    span {
+      font-size: (24 / @tablet*100vw);
+      line-height: (32 / @tablet*100vw);
+    }
+
+    p {
+      font-size: (12 / @tablet*100vw);
+      line-height: (20 / @tablet*100vw);
+      width: 95%;
+
+      margin-top: (12 / @tablet*100vw);
+      margin-bottom: 0;
+    }
+  }
+}

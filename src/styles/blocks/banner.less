@@ -24,3 +24,37 @@
     background: linear-gradient(180deg, @color-light_brown 75%, #fff 25%);
   }
 }
+
+@media (min-width: @tablet) {
+  .banner {
+    padding: (22 / @tablet*100vw);
+    h1 {
+      margin-bottom: (32 / @tablet * 100vw);
+    }
+    .wr-flexbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: (157 / @tablet*100vw);
+      .wrapper {
+        width: (470 / @tablet*100vw);
+        height: (128 / @tablet*100vw);
+      }
+    }
+    &#top {
+      padding-bottom: (324 / @tablet*100vw);
+    }
+
+    &#knowledge {
+      margin-bottom: (144 / @tablet*100vw);
+      .img {
+        width: (361 / @tablet*100vw);
+        height: (420 / @tablet*100vw);
+      }
+    }
+    &#projection {
+      padding-top: (44 / @tablet*100vw);
+      margin-bottom: (144 / @tablet*100vw);
+    }
+  }
+}
