@@ -108,10 +108,10 @@
 @media (min-width: @tablet) {
   .btn {
     width: (160 / @tablet*100vw);
-    height: (48 / @tablet*100vw);
+    height: (40 / @tablet*100vw);
     border-radius: (8 / @tablet * 100vw);
 
-    font-size: (12 / @tablet*100vw);
+    font-size: (10 / @tablet*100vw);
     line-height: (16 / @tablet*100vw);
   }
 
@@ -122,10 +122,9 @@
     border-radius: (24 / @tablet*100vw);
 
     &__projects {
-      width: (347 / @mobile*100vw);
-      height: (212 / @mobile*100vw);
-      margin: 0 (14 / @mobile*100vw) (14 / @mobile*100vw) (12 / @mobile*100vw);
-      border-radius: (24 / @mobile*100vw);
+      width: (362 / @tablet*100vw);
+      height: (424 / @tablet*100vw);
+      border-radius: (24 / @tablet*100vw);
     }
   }
 
@@ -160,5 +159,13 @@
       margin-top: (12 / @tablet*100vw);
       margin-bottom: 0;
     }
+  }
+  .slider-nav {
+    display: none;
+  }
+  .slider-container {
+    display: flex;
+    grid-gap: 0;
+    overflow-x: scroll;
   }
 }

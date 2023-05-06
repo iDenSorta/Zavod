@@ -144,6 +144,12 @@ input[type="checkbox"] {
     margin: 0 0 (24 / @tablet * 100vw);
   }
 
+  h3 {
+    font-size: (24 / @tablet * 100vw);
+    line-height: (32 / @tablet * 100vw);
+    margin: 0 0 (32 / @tablet * 100vw);
+  }
+
   p {
     font-size: (16 / @tablet * 100vw);
     line-height: (32 / @tablet * 100vw);
@@ -167,6 +173,10 @@ input[type="checkbox"] {
     height: 24px;
     border: 2px solid @color-red;
   }
+
+  .flex__no-tablet {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop) {
@@ -184,5 +194,9 @@ input[type="checkbox"] {
   p {
     font-size: (24 / @desktop*100vw);
     line-height: (40 / @desktop*100vw);
+  }
+
+  .flex__no-tablet {
+    display: inline-block;
   }
 }

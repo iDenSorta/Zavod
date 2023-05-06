@@ -14,3 +14,45 @@
     gap: (12 / @mobile*100vw);
   }
 }
+
+@media (min-width: @tablet) {
+  .sectors {
+    padding: 0 (22 / @tablet*100vw);
+    margin-bottom: (144 / @tablet*100vw);
+    background-size: (455 / @tablet*100vw);
+    background-repeat: no-repeat;
+    background-position-x: (572 / @tablet*100vw);
+    background-position-y: (25 / @tablet*100vw);
+
+    .img {
+      width: (362 / @tablet*100vw);
+      height: (380 / @tablet*100vw);
+      float: right;
+    }
+
+    p {
+      display: inline-block;
+      width: (377 / @tablet*100vw);
+    }
+
+    .wr-flexbox {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: (12 / @tablet*100vw);
+      p {
+        margin: 0;
+      }
+    }
+
+    p.diff {
+      font-size: (20 / @tablet*100vw);
+      line-height: (28 / @tablet*100vw);
+      color: @color-black;
+    }
+
+    span.big {
+      font-size: (120 / @tablet*100vw);
+    }
+  }
+}
