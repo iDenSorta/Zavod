@@ -1,5 +1,5 @@
 .projects
-    .wrapper
+    .wrapper__padding
         h3 Наши Проекты
         h2 Проект для промышленной отрасли «Номер 1»
     .projects-js-test
@@ -30,12 +30,14 @@
                 label.option.option-4(for='option-4')
                         span Проект номер 4
     .wrapper
-        p Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров.
-    include components/carousel-projects.pug
-    .wrapper-price       
-            span от
-            .wrapper-price-full
-                .wrapper-price__number
-                        span.flex__no-tablet Цена проекта:
-                        span.red.big 250
-                span.diff млн. рублей
+        .wrapper__float
+                h2 Особенность проекта
+                p Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров.
+        include components/carousel-projects.pug
+        .wrapper-price       
+                span от
+                .wrapper-price-full
+                        .wrapper-price__number
+                                span.flex__no-tablet Цена проекта:
+                                span.red.big 250
+                        span.diff млн. рублей

@@ -3,7 +3,8 @@
 .projects {
   margin-bottom: (96 / @mobile*100vw);
 
-  .wrapper {
+  .wrapper__padding,
+  .wrapper__float {
     padding: 0 (14 / @mobile*100vw);
   }
 
@@ -42,8 +43,8 @@
     display: block;
     width: fit-content;
 
-    border: 2px solid @color-red;
-    border-radius: 8px;
+    border: (2 / @mobile*100vw) solid @color-red;
+    border-radius: (8 / @mobile*100vw);
 
     padding: (8 / @mobile*100vw) (22 / @mobile*100vw);
     text-transform: uppercase;
@@ -85,12 +86,27 @@
   .projects {
     margin-bottom: (144 / @tablet*100vw);
 
-    .wrapper {
+    .wrapper__padding,
+    .wrapper__float {
       padding: 0 (22 / @tablet*100vw);
-      margin-bottom: (44 / @tablet*100vw);
+    }
+    .wrapper__float {
+      float: left;
+      width: 50%;
+      height: (270 / @tablet*100vw);
+    }
+
+    p {
+      height: (230 / @tablet*100vw);
+    }
+
+    .wrapper {
+      float: inline-end;
 
       h2 {
-        margin: 0;
+        font-size: (24 / @tablet*100vw);
+        line-height: (24 / @tablet*100vw);
+        margin-bottom: (16 / @tablet*100vw);
       }
     }
 
@@ -98,7 +114,7 @@
       width: fit-content;
       height: fit-content;
       display: flex;
-      padding: 0 (22 / @tablet*100vw);
+      padding-left: (22 / @tablet*100vw);
       font-size: (36 / @tablet*100vw);
       line-height: (40 / @tablet*100vw);
       gap: (20 / @tablet*100vw);
@@ -128,29 +144,12 @@
     }
 
     label {
-      position: relative;
-      display: block;
-      width: fit-content;
+      border: (2 / @tablet*100vw) solid @color-red;
+      border-radius: (8 / @tablet*100vw);
 
-      border: 2px solid @color-red;
-      border-radius: 8px;
-
-      padding: 8px 22px;
-      text-transform: uppercase;
-
-      font-family: "garet";
-      font-size: 8px;
-      line-height: 16px;
-      color: @color-red;
-    }
-    input[type="radio"] {
-      position: absolute;
-      opacity: 0;
-    }
-
-    input[type="radio"]:checked + label {
-      background-color: @color-red;
-      color: @color-white;
+      padding: (12 / @tablet*100vw) (28 / @tablet*100vw);
+      font-size: (10 / @tablet*100vw);
+      line-height: (16 / @tablet*100vw);
     }
 
     .projects-wrapper__radiotest {
@@ -161,10 +160,38 @@
       }
 
       .flex-flex {
-        padding: 0 14px;
-        display: flex;
-        gap: 14px;
-        width: max-content;
+        padding: 0 (22 / @tablet*100vw);
+        gap: (8 / @tablet*100vw);
+      }
+    }
+
+    .swiffy-slider {
+      margin-right: 22px;
+      width: (362 / @tablet*100vw);
+      float: right;
+
+      li {
+        margin-right: 20px;
+      }
+      li:last-child {
+        margin: 0;
+      }
+    }
+
+    .slider-nav {
+      display: inherit;
+      left: (253 / @tablet*100vw);
+      top: (434 / @tablet*100vw);
+
+      &::before {
+        width: (56 / @tablet*100vw);
+        height: (56 / @tablet*100vw);
+      }
+    }
+
+    .slider-nav-next {
+      &::before {
+        right: (-20 / @tablet*100vw);
       }
     }
   }

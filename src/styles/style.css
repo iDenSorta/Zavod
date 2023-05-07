@@ -387,6 +387,7 @@ input[type="checkbox"] {
     width: 43.35329341vw;
     height: 50.77844311vw;
     border-radius: 2.8742515vw;
+    margin: 0;
   }
   .card__top .img {
     width: 38.08383234vw;
@@ -1037,7 +1038,8 @@ details[open] p {
 .projects {
   margin-bottom: 25.6vw;
 }
-.projects .wrapper {
+.projects .wrapper__padding,
+.projects .wrapper__float {
   padding: 0 3.73333333vw;
 }
 .projects .wrapper-price-full {
@@ -1070,8 +1072,8 @@ details[open] p {
   position: relative;
   display: block;
   width: fit-content;
-  border: 2px solid #e13131;
-  border-radius: 8px;
+  border: 0.53333333vw solid #e13131;
+  border-radius: 2.13333333vw;
   padding: 2.13333333vw 5.86666667vw;
   text-transform: uppercase;
   font-family: "garet";
@@ -1105,18 +1107,31 @@ details[open] p {
   .projects {
     margin-bottom: 17.24550898vw;
   }
-  .projects .wrapper {
+  .projects .wrapper__padding,
+  .projects .wrapper__float {
     padding: 0 2.63473054vw;
-    margin-bottom: 5.26946108vw;
+  }
+  .projects .wrapper__float {
+    float: left;
+    width: 50%;
+    height: 32.33532934vw;
+  }
+  .projects p {
+    height: 27.54491018vw;
+  }
+  .projects .wrapper {
+    float: inline-end;
   }
   .projects .wrapper h2 {
-    margin: 0;
+    font-size: 2.8742515vw;
+    line-height: 2.8742515vw;
+    margin-bottom: 1.91616766vw;
   }
   .projects .wrapper-price {
     width: fit-content;
     height: fit-content;
     display: flex;
-    padding: 0 2.63473054vw;
+    padding-left: 2.63473054vw;
     font-size: 4.31137725vw;
     line-height: 4.79041916vw;
     gap: 2.39520958vw;
@@ -1142,25 +1157,11 @@ details[open] p {
     padding-bottom: 0;
   }
   .projects label {
-    position: relative;
-    display: block;
-    width: fit-content;
-    border: 2px solid #e13131;
-    border-radius: 8px;
-    padding: 8px 22px;
-    text-transform: uppercase;
-    font-family: "garet";
-    font-size: 8px;
-    line-height: 16px;
-    color: #e13131;
-  }
-  .projects input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-  }
-  .projects input[type="radio"]:checked + label {
-    background-color: #e13131;
-    color: #ffffff;
+    border: 0.23952096vw solid #e13131;
+    border-radius: 0.95808383vw;
+    padding: 1.43712575vw 3.35329341vw;
+    font-size: 1.19760479vw;
+    line-height: 1.91616766vw;
   }
   .projects .projects-wrapper__radiotest {
     margin-bottom: 4.79041916vw;
@@ -1169,10 +1170,31 @@ details[open] p {
     display: none;
   }
   .projects .projects-wrapper__radiotest .flex-flex {
-    padding: 0 14px;
-    display: flex;
-    gap: 14px;
-    width: max-content;
+    padding: 0 2.63473054vw;
+    gap: 0.95808383vw;
+  }
+  .projects .swiffy-slider {
+    margin-right: 22px;
+    width: 43.35329341vw;
+    float: right;
+  }
+  .projects .swiffy-slider li {
+    margin-right: 20px;
+  }
+  .projects .swiffy-slider li:last-child {
+    margin: 0;
+  }
+  .projects .slider-nav {
+    display: inherit;
+    left: 30.2994012vw;
+    top: 51.9760479vw;
+  }
+  .projects .slider-nav::before {
+    width: 6.70658683vw;
+    height: 6.70658683vw;
+  }
+  .projects .slider-nav-next::before {
+    right: -2.39520958vw;
   }
 }
 .contacts {
