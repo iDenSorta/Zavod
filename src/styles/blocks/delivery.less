@@ -3,7 +3,7 @@
 .delivery {
   padding: (14 / @mobile*100vw);
   p {
-    margin: 0;
+    margin-bottom: (32 / @mobile*100vw);
   }
 
   .img {
@@ -11,30 +11,74 @@
     height: (196 / @mobile*100vw);
     margin: 0;
     background-color: @color-red;
+    float: right;
   }
 
-  .wr-flexbox {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: (20 / @mobile*100vw);
+  p {
+    span.big {
+      display: block;
+      color: @color-light_grey;
+      padding-top: (56 / @mobile*100vw);
+      height: (146 / @mobile*100vw);
+      line-height: (80 / @mobile*100vw);
+      margin-bottom: (16 / @mobile*100vw);
+    }
+    &.diff {
+      display: flex;
+      align-items: flex-end;
+      font-family: "garet";
+      font-size: (16 / @mobile*100vw);
+      line-height: (24 / @mobile*100vw);
+      height: (40 / @mobile*100vw);
+      color: @color-black;
+      margin-bottom: (14 / @mobile*100vw);
+    }
+    &.text {
+      display: inline-block;
+      margin-bottom: (44 / @mobile*100vw);
+    }
   }
+}
 
-  .wr-flex-vert {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: (64 / @mobile*100vw);
+@media (min-width: @tablet) {
+  .delivery {
+    padding: (22 / @tablet*100vw);
+    h2 {
+      margin-bottom: (16 / @tablet*100vw);
+    }
+    p {
+      margin-bottom: (40 / @tablet*100vw);
+    }
+
+    .img {
+      width: (316 / @tablet*100vw);
+      height: (316 / @tablet*100vw);
+      margin-bottom: (36 / @tablet*100vw);
+    }
 
     p {
       span.big {
-        padding-top: (20 / @mobile*100vw);
+        display: block;
         color: @color-light_grey;
+        padding-top: (6 / @tablet*100vw);
+        height: (80 / @tablet*100vw);
+        font-size: (80 / @tablet*100vw);
+        line-height: (80 / @tablet*100vw);
+        margin-bottom: (36 / @tablet*100vw);
       }
       &.diff {
+        display: flex;
+        align-items: flex-end;
         font-family: "garet";
-        font-size: (16 / @mobile*100vw);
-        line-height: (24 / @mobile*100vw);
-        color: @color-black;
+        font-size: (32 / @tablet*100vw);
+        line-height: (40 / @tablet*100vw);
+        height: (40 / @tablet*100vw);
+        margin-bottom: (16 / @tablet*100vw);
+      }
+      &.text {
+        display: block;
+        min-height: (142 / @tablet*100vw);
+        margin-bottom: (60 / @tablet*100vw);
       }
     }
   }
