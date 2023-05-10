@@ -170,3 +170,14 @@
     overflow-x: scroll;
   }
 }
+
+@media (min-width: @desktop) {
+  .btn {
+    width: (256 / @desktop*100vw);
+    height: (56 / @desktop*100vw);
+    border-radius: (8 / @desktop * 100vw);
+
+    font-size: (16 / @desktop * 100vw);
+    line-height: (16 / @desktop * 100vw);
+  }
+}

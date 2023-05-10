@@ -17,7 +17,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pug": "^3.0.2",
     "wow.js": "^1.2.2"
   },
   "devDependencies": {
