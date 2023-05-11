@@ -171,13 +171,50 @@
   }
 }
 
-@media (min-width: @desktop) {
+@media (min-width: @desktop-mid) {
   .btn {
     width: (256 / @desktop*100vw);
     height: (56 / @desktop*100vw);
     border-radius: (8 / @desktop * 100vw);
-
+    margin: 0;
     font-size: (16 / @desktop * 100vw);
     line-height: (16 / @desktop * 100vw);
+  }
+
+  .img {
+    border-radius: (24 / @desktop*100vw);
+  }
+
+  //---------------- carousel.pug -----------------
+
+  .card__top {
+    .img {
+      width: (508 / @desktop*100vw);
+      height: (294 / @desktop*100vw);
+      margin: 0;
+
+      border-radius: (24 / @desktop*100vw) (24 / @desktop*100vw) 0 0;
+    }
+  }
+
+  .card__bottom {
+    width: (508 / @desktop*100vw);
+    height: (210 / @desktop*100vw);
+    padding: (22 / @desktop*100vw) (36 / @desktop*100vw) (36 / @desktop*100vw)
+      (36 / @desktop*100vw);
+    border-radius: 0 0 (24 / @desktop*100vw) (24 / @desktop*100vw);
+
+    span {
+      font-size: (32 / @desktop*100vw);
+      line-height: (44 / @desktop*100vw);
+    }
+
+    p {
+      font-size: (16 / @desktop*100vw);
+      line-height: (24 / @desktop*100vw);
+      width: 95%;
+
+      margin-top: (12 / @desktop*100vw);
+    }
   }
 }

@@ -276,19 +276,26 @@ input[type="checkbox"] {
     display: none;
   }
 }
-@media (min-width: 2200px) {
+@media (min-width: 1920px) {
   body {
     font-size: 0.63636364vw;
     line-height: 1.09090909vw;
   }
   h2 {
-    font-size: 2.18181818vw;
-    line-height: 2.54545455vw;
+    font-size: 2.90909091vw;
+    line-height: 3.27272727vw;
     margin: 0 0 1.09090909vw;
   }
-  p {
+  h3 {
+    display: inline-block;
+    width: 24.18181818vw;
     font-size: 1.09090909vw;
-    line-height: 1.81818182vw;
+    line-height: 1.45454545vw;
+    margin: 0 0 1.45454545vw;
+  }
+  p {
+    font-size: 0.90909091vw;
+    line-height: 1.45454545vw;
   }
   .flex__no-tablet {
     display: inline-block;
@@ -426,13 +433,39 @@ input[type="checkbox"] {
     overflow-x: scroll;
   }
 }
-@media (min-width: 2200px) {
+@media (min-width: 1920px) {
   .btn {
     width: 11.63636364vw;
     height: 2.54545455vw;
     border-radius: 0.36363636vw;
+    margin: 0;
     font-size: 0.72727273vw;
     line-height: 0.72727273vw;
+  }
+  .img {
+    border-radius: 1.09090909vw;
+  }
+  .card__top .img {
+    width: 23.09090909vw;
+    height: 13.36363636vw;
+    margin: 0;
+    border-radius: 1.09090909vw 1.09090909vw 0 0;
+  }
+  .card__bottom {
+    width: 23.09090909vw;
+    height: 9.54545455vw;
+    padding: 1vw 1.63636364vw 1.63636364vw 1.63636364vw;
+    border-radius: 0 0 1.09090909vw 1.09090909vw;
+  }
+  .card__bottom span {
+    font-size: 1.45454545vw;
+    line-height: 2vw;
+  }
+  .card__bottom p {
+    font-size: 0.72727273vw;
+    line-height: 1.09090909vw;
+    width: 95%;
+    margin-top: 0.54545455vw;
   }
 }
 .header {
@@ -442,7 +475,7 @@ input[type="checkbox"] {
   margin-bottom: 8.53333333vw;
 }
 .header .header-wrapper {
-  display: flex !important;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -723,20 +756,31 @@ input[type="checkbox"] {
     border-radius: 7.66467066vw;
   }
 }
-@media (min-width: 2200px) {
+@media (min-width: 1920px) {
   .header {
-    height: fit-content;
-    margin: 2.5rem auto;
+    width: 81.81818182vw;
+    padding: 0;
+    margin: auto;
     box-sizing: border-box;
   }
+  .header .btn {
+    width: 11.63636364vw;
+    height: 2.54545455vw;
+    margin: 0;
+    font-size: 0.72727273vw;
+    line-height: 0.72727273vw;
+  }
   .header .header-wrapper {
-    margin: 0 5rem 0 5rem;
+    width: auto;
+    height: 7vw;
+    float: right;
   }
   .header .header-wrapper .logo {
-    width: 88px;
-    height: 88px;
-    position: static;
-    margin-top: 2.5rem;
+    width: 24.18181818vw;
+    height: 11.63636364vw;
+    position: absolute;
+    top: 0;
+    left: 9.09090909vw;
   }
   .header .header-wrapper .menu-nav {
     z-index: 2;
@@ -746,8 +790,8 @@ input[type="checkbox"] {
     background-color: transparent;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    width: 100%;
+    margin-right: 14.27272727vw;
+    width: 31.90909091vw;
     height: fit-content;
   }
   .header .header-wrapper .menu-nav .nav {
@@ -758,7 +802,7 @@ input[type="checkbox"] {
     display: flex;
     width: auto;
     flex-direction: row;
-    gap: 6rem;
+    gap: 2.54545455vw;
   }
   .header .header-wrapper .menu-nav ul li a {
     font-family: "Source Sans Pro";
@@ -788,16 +832,11 @@ input[type="checkbox"] {
     text-decoration-color: #3b93e8;
     text-transform: none;
   }
-  .header-wrapper {
-    display: flex !important;
-    justify-content: space-between;
-    align-items: center;
-  }
   .menu__btn {
     display: none;
   }
   .header_btn {
-    display: flex !important;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -873,6 +912,47 @@ input[type="checkbox"] {
     margin-bottom: 17.24550898vw;
   }
 }
+@media (min-width: 1920px) {
+  .banner {
+    width: 100vw;
+    padding: 0 200px;
+  }
+  .banner#top {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 0vw;
+    background-image: url(../../img/banner-bg__desktop.svg);
+    background-position-y: bottom;
+    background-size: 60.90909091vw;
+    margin-top: -5.90909091vw;
+  }
+  .banner#top .wr-flexbox {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.90909091vw;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.81818182vw;
+  }
+  .banner#top .wr-flexbox .wrapper {
+    width: 22.27272727vw;
+    height: unset;
+    min-height: fit-content;
+    max-height: 22.27272727vw;
+  }
+  .banner#top .wr-flexbox .wrapper p {
+    margin: 0;
+  }
+  .banner#top h1 {
+    width: 57.63636364vw;
+    font-size: 4.54545455vw;
+    line-height: 5vw;
+  }
+  .banner#top .img {
+    width: 57.63636364vw;
+    height: 27.81818182vw;
+  }
+}
 .produce {
   margin-bottom: 25.6vw;
 }
@@ -888,6 +968,24 @@ input[type="checkbox"] {
   }
   .produce li:last-child {
     padding: 0 2.63473054vw;
+  }
+}
+@media (min-width: 1920px) {
+  .produce {
+    width: 100vw;
+    padding: 0 9.09090909vw;
+    margin-bottom: 9.27272727vw;
+  }
+  .produce .wrapper {
+    padding: 0 0 0 24.18181818vw;
+  }
+  .produce .wrapper h2 {
+    margin-bottom: 1.90909091vw;
+  }
+  .produce .wrapper p {
+    width: 33.45454545vw;
+    height: fit-content;
+    margin-bottom: 3.81818182vw;
   }
 }
 .sectors {
@@ -936,6 +1034,52 @@ input[type="checkbox"] {
   }
   .sectors span.big {
     font-size: 14.37125749vw;
+  }
+}
+@media (min-width: 1920px) {
+  .sectors {
+    width: 100vw;
+    height: 44.54545455vw;
+    padding: 0 9.09090909vw;
+    margin-bottom: 5.54545455vw;
+    background-size: 29.22727273vw;
+    background-repeat: no-repeat;
+    background-position-x: 0vw;
+    background-position-y: 15.22727273vw;
+  }
+  .sectors .wrapper:first-child {
+    display: flex;
+  }
+  .sectors .wrapper:last-child {
+    padding-left: 24.18181818vw;
+  }
+  .sectors .wrapper:last-child .wrapper {
+    padding: 0;
+  }
+  .sectors .wr-flexbox {
+    gap: 0.72727273vw;
+  }
+  .sectors h2 {
+    display: inline-block;
+    width: 57.63636364vw;
+    margin-bottom: 3.27272727vw;
+  }
+  .sectors p {
+    max-height: 9.81818182vw;
+    width: 25.63636364vw;
+  }
+  .sectors .img {
+    width: 27.86363636vw;
+    height: 25.09090909vw;
+    float: right;
+  }
+  .sectors p.diff {
+    font-size: 1.45454545vw;
+    line-height: 1.81818182vw;
+  }
+  .sectors span.big {
+    font-size: 9.09090909vw;
+    line-height: 10.72727273vw;
   }
 }
 .delivery {

@@ -21,3 +21,23 @@
     }
   }
 }
+
+@media (min-width: @desktop-mid) {
+  .produce {
+    width: 100vw;
+    padding: 0 (200 / @desktop*100vw);
+    margin-bottom: (204 / @desktop*100vw);
+    .wrapper {
+      padding: 0 0 0 (532 / @desktop*100vw);
+      h2 {
+        margin-bottom: (42 / @desktop*100vw);
+      }
+
+      p {
+        width: (736 / @desktop*100vw);
+        height: fit-content;
+        margin-bottom: (84 / @desktop*100vw);
+      }
+    }
+  }
+}

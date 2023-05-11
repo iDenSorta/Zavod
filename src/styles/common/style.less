@@ -185,21 +185,29 @@ input[type="checkbox"] {
   }
 }
 
-@media (min-width: @desktop) {
+@media (min-width: @desktop-mid) {
   body {
     font-size: (14 / @desktop*100vw);
     line-height: (24 / @desktop*100vw);
   }
 
   h2 {
-    font-size: (48 / @desktop*100vw);
-    line-height: (56 / @desktop*100vw);
+    font-size: (64 / @desktop*100vw);
+    line-height: (72 / @desktop*100vw);
     margin: 0 0 (24 / @desktop*100vw);
   }
 
+  h3 {
+    display: inline-block;
+    width: (532 / @desktop*100vw);
+    font-size: (24 / @desktop * 100vw);
+    line-height: (32 / @desktop * 100vw);
+    margin: 0 0 (32 / @desktop * 100vw);
+  }
+
   p {
-    font-size: (24 / @desktop*100vw);
-    line-height: (40 / @desktop*100vw);
+    font-size: (20 / @desktop*100vw);
+    line-height: (32 / @desktop*100vw);
   }
 
   .flex__no-tablet {
