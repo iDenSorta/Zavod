@@ -51,3 +51,33 @@
     }
   }
 }
+
+@media (min-width: @tablet) {
+  .footer {
+    width: (2200 / @desktop*100vw);
+    font-size: (24 / @desktop*100vw);
+    line-height: (32 / @desktop*100vw);
+
+    .wrapper {
+      display: flex;
+      margin-bottom: (65 / @desktop*100vw);
+      justify-content: space-between;
+      padding: 0 (200 / @desktop*100vw);
+    }
+
+    .footer__wrapper_links {
+      display: contents;
+    }
+    .footer__wrapper_info {
+      display: contents;
+      text-align: right;
+      flex-direction: column;
+      gap: (8 / @tablet*100vw);
+      margin-bottom: (0 / @tablet*100vw);
+
+      .footer__wrapper-item:first-child {
+        order: -1;
+      }
+    }
+  }
+}

@@ -104,7 +104,8 @@ span.big {
 
 input {
   font-family: "Source Sans Pro";
-  font-size: inherit;
+  font-size: (16 / @mobile*100vw);
+  line-height: (32 / @mobile*100vw);
   color: inherit;
 }
 
@@ -174,6 +175,13 @@ input[type="checkbox"] {
     line-height: (40 / @tablet*100vw);
   }
 
+  input {
+    font-family: "Source Sans Pro";
+    font-size: (24 / @tablet*100vw);
+    line-height: (40 / @tablet*100vw);
+    color: inherit;
+  }
+
   input[type="checkbox"] {
     width: 24px;
     height: 24px;
@@ -213,5 +221,36 @@ input[type="checkbox"] {
 
   .flex__no-tablet {
     display: inline-block;
+  }
+
+  ::placeholder {
+    font-size: (32 / @desktop*100vw);
+    line-height: (40 / @desktop*100vw);
+  }
+
+  input {
+    font-family: "Source Sans Pro";
+    font-size: (32 / @desktop*100vw);
+    line-height: (40 / @desktop*100vw);
+    color: inherit;
+  }
+
+  .text-field__input {
+    width: (988 / @desktop*100vw);
+    height: (108 / @desktop*100vw);
+    padding: (34 / @desktop*100vw);
+    margin-bottom: (24 / @desktop*100vw);
+    border-radius: (24 / @desktop*100vw);
+  }
+
+  ::placeholder {
+    font-size: (32 / @desktop*100vw);
+    line-height: (40 / @desktop*100vw);
+  }
+
+  input[type="checkbox"] {
+    width: (24 / @desktop * 100vw);
+    height: (24 / @desktop * 100vw);
+    border: 2px solid @color-red;
   }
 }

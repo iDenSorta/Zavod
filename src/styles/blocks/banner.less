@@ -149,6 +149,8 @@
     }
 
     &#projection {
+      width: (2200 / @desktop*100vw);
+      padding: 0 (200 / @desktop*100vw);
       padding-top: (94 / @desktop*100vw);
       margin-bottom: (204 / @desktop*100vw);
 
@@ -163,15 +165,17 @@
 
       h1 {
         display: inline-block;
-        width: (1354 / @desktop*100vw);
+        max-width: (1354 / @desktop*100vw);
         font-size: (156 / @desktop*100vw);
         line-height: (170 / @desktop*100vw);
       }
 
       p {
         display: inline-block;
-        width: (365 / @desktop*100vw);
+        max-width: (365 / @desktop*100vw);
         max-height: (340 / @desktop*100vw);
+        font-size: (20 / @desktop*100vw);
+        line-height: (32 / @desktop*100vw);
       }
     }
   }
