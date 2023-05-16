@@ -2057,7 +2057,7 @@ details[open] p {
     margin-bottom: 0vw;
   }
 }
-@media (min-width: 835px) {
+@media (min-width: 1920px) {
   .footer {
     width: 100vw;
     font-size: 1.09090909vw;
@@ -2076,7 +2076,7 @@ details[open] p {
     display: contents;
     text-align: right;
     flex-direction: column;
-    gap: 0.95808383vw;
+    gap: 0.36363636vw;
     margin-bottom: 0vw;
   }
   .footer .footer__wrapper_info .footer__wrapper-item:first-child {
